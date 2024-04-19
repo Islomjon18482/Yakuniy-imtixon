@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import Logo from "../assets/Logo.svg";
 import Btn from "../elements/Btn";
 import SelectCurrency from "../elements/SelectCurrency";
+import { Link } from "react-router-dom";
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -22,7 +23,9 @@ const HeaderWrapper = styled.div`
 function Header() {
   return (
     <HeaderWrapper>
-      <img src={Logo} alt="Logo icon" />
+      <Link to='/'>
+        <img src={Logo} alt="Logo icon" />
+      </Link>
       <div className="header__btns">
         <SelectCurrency></SelectCurrency>
         <Btn></Btn>
