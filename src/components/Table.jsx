@@ -171,7 +171,7 @@ function Table() {
           {
             show ? <CircularProgress
             style={{ color: "skyblue" }}
-            size={250}
+            size={100}
             thickness={1}
           /> :
           <tbody>
